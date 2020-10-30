@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
   background("black");  
-  if (car.collide("wall")){
+  if (isTouching(car,wall)){
     car.velocityX=0;
   }
   if (deform<100){
